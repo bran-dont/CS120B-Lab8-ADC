@@ -1,18 +1,14 @@
 /*	Author: Brandon Tran
  *  Partner(s) Name: 
  *	Lab Section:
- *	Assignment: Lab #8  Exercise #1
- *	Exercise Description: Make sure your breadboard is wired according to the prelab. The potentiometer is used to adjust the voltage supplied to the microcontroller for ADC . Design a system that reads the 10-bit ADC result from the ADC register, and displays the result on a bank of 10 LEDs.
-Hints:
-Assuming the breadboard has been wired according to the prelab photo, display the lower 8 bits on port B, and the upper 2 bits on port D.
-Use a “short” variable to hold the ADC result.
-Use bit shifting and casting to align the proper bits to the proper ports. For example:
+ *	Assignment: Lab #8  Exercise #2
+ *	Exercise Description: A photoresistor is a resistor whose resistance varies based on how much light the photoresistor detects. An additional resistor needs to be connected in parallel with the photoresistor. Without the additional resistor, results from ADC will be too small to observe. A 330 ohm resistor is chosen because it is common in the lab kits. Connect the photoresistor to the microcontroller according to the diagram below.
 
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
- *
- *	Demo Link: https://www.youtube.com/watch?v=EG6v1Fx5jdE
+ * 
+ *	Demo Link: https://www.youtube.com/watch?v=KqgWekqUSWY
  */
 #include <avr/io.h>
 #ifdef _SIMULATE_
